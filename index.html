@@ -8,7 +8,11 @@
     <canvas id="tutorial" width="150" height="150"></canvas>
     <script>
     	var canvas = document.getElementById('tutorial');
-    	var ctx = canvas.getContext('2d');
+    	if (canvas.getContext) {
+    		var ctx = canvas.getContext('2d');
+    	} else {
+    		
+    	}
     </script>
 </body>
 </html>
